@@ -6,6 +6,11 @@ Console.WriteLine("Введите число 1: ");
 int num1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число 2: ");
 int num2 = int.Parse(Console.ReadLine());
+if (num1 ==4)
+{
+Console.WriteLine("Нельзя указывать число больше 3, поскольку значение числа превышает количество атомов в видимой нами вселенной");
+return;
+}
 
 Console.WriteLine(CalculateAkkerman(num1, num2));
 int CalculateAkkerman(int num1, int num2)
